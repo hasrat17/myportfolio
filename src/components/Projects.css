@@ -1,0 +1,103 @@
+.projectsSection {
+  padding: 4rem 2rem;
+  background-color: #000044;
+  color: white;
+  text-align: center;
+}
+
+.projectsSection h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.carouselContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background-color: #050557;
+  border-radius: 12px;
+  padding: 2rem;
+  width: 450px;
+  /* Increased width for larger cards */
+  height: 400px;
+  /* Increased height for larger cards */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+  margin: 0 2rem;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  /* Smooth transition */
+  opacity: 1;
+  /* Ensure visibility */
+}
+
+.card h2 {
+  font-size: 1.7rem;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  font-size: 1rem;
+  text-align: justify;
+  color: #b89a9a;
+  overflow-y: auto;
+  /* Scroll if content exceeds height */
+}
+
+.links {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.linkButton {
+  background-color: #a2a2f8;
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.linkButton:hover {
+  background-color: #6161f4;
+}
+
+.navButton {
+  background-color: #050557;
+  color: white;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+.navButton:hover {
+  background-color: #a2a2f8;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 90%;
+    /* Adjust card width */
+    height: 450px;
+    /* Allow height to grow with content */
+    min-height: 350px;
+    /* Minimum height for visibility */
+  }
+
+
+  .linkButton {
+    margin-left: 2px;
+  }
+
+  .navButton {
+    font-size: 1.5rem;
+  }
+}

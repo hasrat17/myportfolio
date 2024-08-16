@@ -1,0 +1,23 @@
+.firstSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 6vw 0;
+  }
+  
+  .leftSection {
+    font-size: 2.5rem;
+    margin: 40px 0;
+  }
+  
+  .rightSection img {
+    width: 80%;
+    margin: 3vw 0;
+    border-radius: 50%;
+  }
+  
+  .purple {
+    color: rgb(216, 51, 216);
+  }
+  
